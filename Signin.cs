@@ -23,6 +23,7 @@ namespace WindowsFormsApp1
             Login login = new Login();
             this.Visible = false;
             login.ShowDialog();
+            //
         }
         private void button1_Click(object sender, EventArgs e)
         {
