@@ -55,6 +55,5 @@ namespace WindowsFormsApp1
             else
                 MessageBox.Show("此帳號無法註冊");
         }
-
     }
 }

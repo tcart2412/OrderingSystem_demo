@@ -139,6 +139,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
             this.Name = "Signin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "管理員註冊頁面";
             this.ResumeLayout(false);
             this.PerformLayout();

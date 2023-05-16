@@ -29,13 +29,13 @@ namespace WindowsFormsApp1
         {
             SqlConnection conn = new SqlConnection("Data Source=localhost;Initial Catalog='我的資料庫';Integrated Security=True;Connect Timeout=30;Encrypt=False;");
             conn.Open();
-            SqlCommand cmd = new SqlCommand("select 帳號 from 帳密", conn);//sql語法
+            SqlCommand cmd = new SqlCommand("select * from 帳密", conn);//sql語法
             cmd.ExecuteNonQuery();
             SqlDataReader reader = cmd.ExecuteReader();
             int cnt = 0;//重複
             while (reader.Read())
             {
-                if (textBox1.Text == reader[0].ToString())
+                if (textBox1.Text == reader[0].ToString() && textBox2.Text == reader[1].ToString())
                     cnt++;
             }
             if (cnt > 0)
