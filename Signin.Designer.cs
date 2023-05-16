@@ -42,9 +42,9 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("新細明體", 30F);
+            this.label2.Font = new System.Drawing.Font("PMingLiU", 30F);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.label2.Location = new System.Drawing.Point(115, 46);
+            this.label2.Location = new System.Drawing.Point(57, 39);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(222, 50);
             this.label2.TabIndex = 1;
@@ -53,8 +53,8 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("新細明體", 12F);
-            this.label1.Location = new System.Drawing.Point(120, 145);
+            this.label1.Font = new System.Drawing.Font("PMingLiU", 12F);
+            this.label1.Location = new System.Drawing.Point(62, 138);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(49, 20);
             this.label1.TabIndex = 2;
@@ -63,8 +63,8 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("新細明體", 12F);
-            this.label3.Location = new System.Drawing.Point(120, 193);
+            this.label3.Font = new System.Drawing.Font("PMingLiU", 12F);
+            this.label3.Location = new System.Drawing.Point(62, 186);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(49, 20);
             this.label3.TabIndex = 3;
@@ -72,14 +72,14 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(215, 140);
+            this.textBox1.Location = new System.Drawing.Point(157, 133);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(122, 25);
             this.textBox1.TabIndex = 4;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(215, 193);
+            this.textBox2.Location = new System.Drawing.Point(157, 186);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(122, 25);
             this.textBox2.TabIndex = 5;
@@ -87,8 +87,8 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("新細明體", 12F);
-            this.label4.Location = new System.Drawing.Point(120, 239);
+            this.label4.Font = new System.Drawing.Font("PMingLiU", 12F);
+            this.label4.Location = new System.Drawing.Point(62, 232);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(49, 20);
             this.label4.TabIndex = 6;
@@ -96,15 +96,15 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(215, 239);
+            this.textBox3.Location = new System.Drawing.Point(157, 232);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(122, 25);
             this.textBox3.TabIndex = 7;
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("新細明體", 12F);
-            this.button1.Location = new System.Drawing.Point(124, 290);
+            this.button1.Font = new System.Drawing.Font("PMingLiU", 12F);
+            this.button1.Location = new System.Drawing.Point(66, 283);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(91, 33);
             this.button1.TabIndex = 8;
@@ -115,7 +115,7 @@
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(269, 290);
+            this.linkLabel1.Location = new System.Drawing.Point(211, 283);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(37, 15);
             this.linkLabel1.TabIndex = 9;
@@ -128,7 +128,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.ClientSize = new System.Drawing.Size(445, 398);
+            this.ClientSize = new System.Drawing.Size(339, 383);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox3);

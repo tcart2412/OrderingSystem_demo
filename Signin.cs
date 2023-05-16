@@ -23,7 +23,6 @@ namespace WindowsFormsApp1
             Login login = new Login();
             this.Visible = false;
             login.ShowDialog();
-            //
         }
         private void button1_Click(object sender, EventArgs e)
         {
@@ -31,10 +30,8 @@ namespace WindowsFormsApp1
             conn.Open();
             SqlCommand cmd = new SqlCommand($"insert into 帳密 values (@帳號, @密碼)", conn);//sql語法
             SqlCommand cmd2 = new SqlCommand("select * from 帳密", conn);//sql語法
-            SqlCommand cmd3 = new SqlCommand($"DELETE FROM 帳密 WHERE 帳號 = '{textBox1.Text}'", conn);
             cmd.Parameters.AddWithValue("@帳號", textBox1.Text);
             cmd.Parameters.AddWithValue("@密碼", textBox2.Text);
-            //cmd3.ExecuteNonQuery();
             SqlDataReader reader = cmd2.ExecuteReader();
             bool isExist = false;
             while (reader.Read())
