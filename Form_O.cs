@@ -111,7 +111,7 @@ namespace WindowsFormsApp1
             dataGridView1.Visible = false;
             Login login = new Login();
             Form_M fm = new Form_M();
-            if (Login.loginAccount == "")
+            if (Login.loginAccount == "") // 進行是否目前有帳號登入的判斷
                 login.ShowDialog(this);
             else
                 fm.ShowDialog(this);
