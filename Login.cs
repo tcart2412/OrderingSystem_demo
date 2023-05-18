@@ -18,13 +18,14 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
+        public static string loginAccount = "";
+
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Signin signin = new Signin();
             this.Visible = false;
             signin.ShowDialog();
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             SqlConnection conn = new SqlConnection("Data Source=localhost;Initial Catalog='我的資料庫';Integrated Security=True;Connect Timeout=30;Encrypt=False;");
@@ -38,11 +39,12 @@ namespace WindowsFormsApp1
                 if (textBox1.Text == reader[0].ToString() && textBox2.Text == reader[1].ToString())
                     cnt++;
             }
-            if (cnt > 0)
+            if (cnt > 0) // 登入成功
             {
                 Form_M fm1 = new Form_M();
-                this.Visible = false;
+                this.Close();
                 fm1.ShowDialog(this);
+                loginAccount = textBox1.Text;
             }
             else
                 MessageBox.Show("帳號或密碼錯誤");

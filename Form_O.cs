@@ -104,21 +104,17 @@ namespace WindowsFormsApp1
             catch (Exception) { }
         }
 
-        //public static int i = 0;
-        //private int k = 0;
-        //private int c = 0;
-        //public static int status = 0;
-        //public static int statusDelete = 0;
-        //public static string btn_class;
         private System.Windows.Forms.Button[] btns_arr = new System.Windows.Forms.Button[18];
-
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e) // 進入管理介面
         {
             dataGridView1.Visible = false;
             Login login = new Login();
-            this.Visible = false;
-            login.ShowDialog();
+            Form_M fm = new Form_M();
+            if (Login.loginAccount == "")
+                login.ShowDialog(this);
+            else
+                fm.ShowDialog(this);
             SqlConnection conn = new SqlConnection("Data Source=localhost;Initial Catalog=TestDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;");
             conn.Open();
             SqlCommand cmd = new SqlCommand($"Select * from 類別清單", conn);
@@ -170,7 +166,6 @@ namespace WindowsFormsApp1
             productList_Show(btn);
             btn.BackColor = Color.SandyBrown;
         }
-
         private void Form_O_Load(object sender, EventArgs e)
         {
             dataGridView2.Columns[0].Width = 50;
