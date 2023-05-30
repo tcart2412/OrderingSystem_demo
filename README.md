@@ -24,7 +24,7 @@ S : 商品設定 O : 點餐 R : 結帳明細 M : 商品類別管理<br>
 ***
 
 ### 商品點餐介面 : 
-<img src="./Form_O.png" width="500" height="300"/>
+<img src="./Form_O.png" width="1200" height="500"/>
 
 ### 功能 : 
 
@@ -51,7 +51,7 @@ S : 商品設定 O : 點餐 R : 結帳明細 M : 商品類別管理<br>
 
 ### 商品管理介面 :
 
-<img src="./Form_M.png" width="500" height="300"/>
+<img src="./Form_M.png" width="1200" height="500"/>
 
 ### 功能 : 
 
